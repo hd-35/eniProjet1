@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+$width: 100px;
+
+p {
+    @if ($width < 50px) {
+        width: $width;
+    } @else {
+        width: math.div($width, 2);
+    }
+}
+
+@for $i from 1 to 7 {
+    h#{$i} {
+        font-size: 7rem - $i;
+    }
+}
+
+@each $langage in java, python, php, dart, fortran {
+    .img-#{$langage} {
+        background-image: url('/images/#{$langage}.png');
+    }
+}

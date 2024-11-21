@@ -1,0 +1,17 @@
+body {
+  background-color: #132;
+  color: rgb(223, 155, 88);
+  font-family: sans-serif;
+}
+
+article {
+  background-color: red;
+}
+article h1 {
+  color: white;
+}
+article p {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

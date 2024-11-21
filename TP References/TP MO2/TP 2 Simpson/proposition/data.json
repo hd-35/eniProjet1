@@ -1,0 +1,14 @@
+{
+    "users" : [
+        {
+            "nom": "DENIS", 
+            "âge": "45", 
+            "ville": "Betton"
+        },
+        {
+            "nom": "julien", 
+            "âge": "43", 
+            "ville": "Rennes"
+        }
+    ]
+}

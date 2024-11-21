@@ -1,0 +1,11 @@
+.success, .alert {
+  border: 1px solid #ccc;
+  font-size: 50px/10;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

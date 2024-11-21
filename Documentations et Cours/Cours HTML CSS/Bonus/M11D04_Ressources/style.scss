@@ -1,0 +1,14 @@
+%alert-config {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.alert {
+    @extend %alert-config;
+}
+
+.success {
+    @extend %alert-config;
+    border-color: green;
+}

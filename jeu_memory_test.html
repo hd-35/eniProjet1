@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+  <title>ENI - Jeu MEMORY - Jeu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cadreDeJeu.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <div>
+      <label for="themaSelect" class="selectThema">Sélection thématique des cartes : </label>
+      <select name="thema" id="themaSelect">
+        <option value="eighties">Eighties</option>
+        <option value="animals">Animals</option>
+        <option value="cats">Cats</option>
+        <option value="covid19">COVID-19</option>
+        <option value="ecology">Ecology</option>
+        <option value="fairy_tales">Fairy Tales</option>
+        <option value="flags">Flags</option>
+        <option value="gym">Gym</option>
+        <option value="halloween">Halloween</option>
+        <option value="music">Music</option>
+        <option value="owls">Owls</option>
+        <option value="pokemon">Pokemon</option>
+        <option value="robots">Robots</option>
+        <option value="space">Space</option>
+        <option value="xmas">Christmas</option>
+      </select>
+    </div>
+    <hr>
+
+    <div>
+      <label for="formatSelect" class="selectFormat">Taille du plateau de jeu</label>
+      <select name="formatSelect" id="formatSelect">
+        <option value="4">2x4</option>
+        <option value="6">3x4</option>
+        <option value="8">4x4</option>
+        <option value="10">5x4</option>
+      </select>
+    </div>
+    <hr>
+
+
+
+
+
+    <div class="cadreDeJeu">
+      <div id="card-container"></div>
+    </div>
+    <hr>
+    
+    <div id="info"></div>
+
+  </main>
+
+  
+<!--       <div class="card" data-value="1">
+        <img idcardValue="1" src="assets/cards/BackCard.png" alt="">
+      </div> -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+  <script src="memory-game.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <div id="game-container">
+
+    </div> -->
+
+
+
+
+<!-- 16 cartes "assets/cards/eighties" -->

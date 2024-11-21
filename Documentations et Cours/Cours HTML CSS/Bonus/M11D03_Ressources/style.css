@@ -1,0 +1,13 @@
+.success {
+  background-color: green;
+  border: 1px solid black;
+  box-shadow: 0 0 3px rgba(0, 128, 0, 0.3);
+}
+
+.danger {
+  background-color: red;
+  border: 1px solid black;
+  box-shadow: 0 0 3px rgba(255, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */

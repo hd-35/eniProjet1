@@ -1,0 +1,13 @@
+@mixin theme($couleur: grey) {
+    background-color: $couleur;
+    border: 1px solid black;
+    box-shadow: 0 0 3px rgba($couleur, 0.3);
+}
+
+.normal {
+    @include theme;
+}
+
+.success {
+    @include theme($couleur: green);
+}

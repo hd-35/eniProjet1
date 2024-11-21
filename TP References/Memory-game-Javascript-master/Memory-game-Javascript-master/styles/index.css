@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Premier2019;
+    src: url(Premier2019-rPv9.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/bg-stade1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bar-logo {
+    position: absolute;
+    right: 10%;
+}
+
+.bar-logo .logo-menu {
+    height: 70px;
+    width: 70px;
+}
+
+.deck {
+    width: 800px;
+    height: 800px;
+    background-image: url(../assets/poke-floor.png);
+    background-size: contain;
+    border: solid 15px;
+    border-color: rgba(106,75,9,1);
+    border-radius: 20px;
+    padding: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px;
+}
+
+.deck .carte {
+    height: 150px;
+    width: 115px;
+    display: flex;
+    font-size: 0;
+    cursor: pointer;
+    color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url(../assets/dos_carte/dos-pk.png);
+}
+
+.deck .carte .png {
+    visibility: hidden;
+}
+
+.deck .carte.open {
+    border: solid 2px red;
+    background: #0f6299;
+    cursor: default;
+}
+
+.deck .carte.show {
+    font-size: 33px;
+}
+
+.deck .carte.match {
+    cursor: default;
+    background: #0f6299;
+    font-size: 33px;
+}
+
+.deck .carte.unmatched {
+    background: red;
+    cursor: default;
+}
+
+.deck .carte.open .png{
+    visibility: hidden;
+}
+
+.deck .carte.show .png{
+    font-size: 33px;
+    visibility: visible;
+}
+
+.deck .carte.match .png{
+    cursor: default;
+    visibility: visible;
+    background: #0f6299;
+    font-size: 33px;
+}
+
+.deck .carte.unmatched .png{
+    background: red;
+    visibility: visible;
+    cursor: default;
+}
+
+.deck .carte.disabled {
+    pointer-events: none;
+}
+
+.scoreboard {
+    height: 200px;
+    width: 370px;
+    border-radius: 10px;
+    background: black;
+    margin: 0 0 5px;
+    cursor: pointer;
+}
+
+.scoreboard .timer {
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    font-family: 'Premier2019';
+
+}
+
+.scoreboard .scoring {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.scoreboard .score-title {
+    margin: auto 30px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Premier2019';
+}
+
+.scoreboard .score-element {
+    margin: auto 55px;
+    display: inline-block;
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    font-family: 'Premier2019';
+}
+
+.menu {
+    position: fixed;
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal {
+    margin: 72px auto;
+    padding: 21px;
+    padding-top: 0px;
+    height: 150px;
+    top: 30%;
+    background: black;
+    border: solid 5px white;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.show {
+    visibility: visible;
+    opacity: 100;
+}
+
+.menu h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Premier2019';
+    text-align: center;
+}
+
+.menu-png {
+    display: inline-block;
+    margin: 0 10%;
+    cursor: pointer;
+}
+
+.menu-logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.endMenu {
+    position: fixed;
+    transition: opacity 400ms;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.endModal {
+    margin: 72px auto;
+    padding: 21px;
+    padding-top: 0px;
+    height: 300px;
+    top: 30%;
+    background: black;
+    border: solid 5px white;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    
+}
+
+.endModal .close {
+    position: absolute;
+    top: 21px;
+    right: 32px;
+    transition: all 200ms;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.show-end {
+    visibility: visible;
+    opacity: 100;
+}
+
+.endMenu h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Premier2019';
+    text-align: center;
+}
+
+.endMenu .endModal .stats {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Premier2019';
+}
+
+.menu-png-end {
+    display: inline-block;
+    margin: 0 10%;
+    cursor: pointer;
+}
+
+.menu-logo-end {
+    margin: 0 auto;
+    text-align: center;
+}

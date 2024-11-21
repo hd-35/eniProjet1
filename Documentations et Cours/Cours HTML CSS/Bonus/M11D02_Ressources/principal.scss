@@ -1,0 +1,9 @@
+//Appel de _comp.scss
+@use 'comp';
+
+div {
+    //Appel d'une variable de comp
+   background-color: comp.$color-perso; 
+   color: green;
+}
+

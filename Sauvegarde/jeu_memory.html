@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>ENI - Jeu MEMORY - Jeu</title>
+  <link rel="stylesheet" href="CSS/style_memory.css" />
+  <link rel="stylesheet" href="CSS/header_memory.css" />
+  <link rel="stylesheet" href="CSS/bouton-acceuil_memory.css">
+  <link rel="stylesheet" href="memory-game.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img id="logoEni" src="assets/images/logo-eni.png" alt="Logo de l'école ENI" />
+      <div class="titre">
+        <h1>Jeu de Memory</h1>
+      </div>
+    </div>
+
+    <div class="btnForm">
+      <a href="acceuil_memory.html" class="btn">Acceuil</a>
+      <a href="formulaire_memory.html" class="btn">Inscription</a>
+      <a href="connexion_memory.html" class="btn">Se connecter</a>
+      <a href="profil_memory.html" class="btn">Profil</a>
+      <a href="jeu_memory.html" class="btn">Jouer</a>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div id="game-container">
+
+    </div>
+
+
+
+  
+      <!-- 16 cartes "assets/cards/eighties" -->
+ <!--      <div class="card" data-value=images tiré"1">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+          
+          <div class="card-back" style="background-image: url('assets/cards/eighties/1.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="2">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/2.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="3">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/3.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="4">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/4.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="5">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/5.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="6">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/6.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="7">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/7.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="8">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/8.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="9">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/9.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="10">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/10.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="11">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/11.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="12">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/12.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="13">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/13.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="14">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/14.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="15">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/15.svg');"></div>
+        </div>
+      </div>
+
+      <div class="card" data-value="16">
+        <div class="card-inner">
+          <div class="card-front" style="background-image: url(assets/cards/BackCard.svg);"></div>
+
+          <div class="card-back" style="background-image: url('assets/cards/eighties/16.svg');"></div>
+        </div>
+      </div>
+
+     -->
+  </main>
+
+  <script src="memory-game.js"></script>
+</body>
+
+</html>

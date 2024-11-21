@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link href="styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="all">
+        
+        <div class="scoreboard" onclick="menuPop()">
+            <h2 class="timer">39:59</h2>
+        
+            <div class="scoring">
+                <p class="score-title">Score</p>
+                <p class="score-title">Bonus</p>
+                <p class="score-element score">8</p>
+                <p class="score-element bonus">x4</p>
+            </div>
+        </div>
+        <ul class="deck" id="deck-carte">
+            <li class="carte" type="pikachu">
+                <img class="png" src="assets/face_carte/pikachu.png"></li>
+            <li class="carte" type="pikachu">
+                <img class="png" src="assets/face_carte/pikachu.png"></li>
+            <li class="carte" type="bulbizarre">
+                <img class="png" src="assets/face_carte/bulbizarre.png"></li>
+            <li class="carte" type="bulbizarre">
+                <img class="png" src="assets/face_carte/bulbizarre.png"></li>
+            <li class="carte" type="carapuce">
+                <img class="png" src="assets/face_carte/carapuce.png"></li>
+            <li class="carte" type="carapuce">
+                <img class="png" src="assets/face_carte/carapuce.png"></li>
+            <li class="carte" type="h-ball">
+                <img class="png" src="assets/face_carte/h-ball.png"></li>
+            <li class="carte" type="h-ball">
+                <img class="png" src="assets/face_carte/h-ball.png"></li>
+            <li class="carte" type="miaouss">
+                <img class="png" src="assets/face_carte/miaouss.png"></li>
+            <li class="carte" type="miaouss">
+                <img class="png" src="assets/face_carte/miaouss.png"></li>
+            <li class="carte" type="pokeball">
+                <img class="png" src="assets/face_carte/pokeball.png"></li>
+            <li class="carte" type="pokeball">
+                <img class="png" src="assets/face_carte/pokeball.png"></li>
+            <li class="carte" type="pokedex">
+                <img class="png" src="assets/face_carte/pokedex.png"></li>
+            <li class="carte" type="pokedex">
+                <img class="png" src="assets/face_carte/pokedex.png"></li>
+            <li class="carte" type="ronflex">
+                <img class="png" src="assets/face_carte/ronflex.png"></li>
+            <li class="carte" type="ronflex">
+                <img class="png" src="assets/face_carte/ronflex.png"></li>
+            <li class="carte" type="salameche">
+                <img class="png" src="assets/face_carte/salameche.png"></li>
+            <li class="carte" type="salameche">
+                <img class="png" src="assets/face_carte/salameche.png"></li>
+        </ul>
+        <div id="popup" class="menu">
+            <div class="modal">
+                <h2>Menu</h2>
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img class="menu-png" src="assets/home.png">
+                    </a>
+                    <img onclick="restart()" class="menu-png" src="assets/restart.png">
+                </div>
+            </div>
+        </div>
+        <div id="victory" class="endMenu">
+            <div class="endModal">
+                <h2>Félicitation!</h2>
+                <div class="stats">
+                    <p>Votre score est de: <span id="final-score"></span></p>
+                    <p>En seulement <span id="final-time"></span></p>
+                </div>
+                <div class="menu-logo-end">
+                    <a href="index.html">
+                        <img class="menu-png-end" src="assets/home.png">
+                    </a>
+                    <img onclick="closeEnd()" class="menu-png-end" src="assets/restart.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

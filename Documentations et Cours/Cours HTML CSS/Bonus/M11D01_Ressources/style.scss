@@ -1,0 +1,23 @@
+$maPolice: sans-serif;
+$maCouleur1: #132;
+$maCouleur2: rgb(223, 155, 88);
+
+
+body {
+    background-color: $maCouleur1;
+    color: $maCouleur2;
+    font-family: $maPolice;
+}
+
+
+article {
+    background-color: red;
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: black;
+    }
+}

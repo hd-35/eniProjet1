@@ -1,0 +1,19 @@
+@use "sass:color";
+@use "sass:math";
+
+$color-div: rgb(random(255), random(255), random(255));
+
+@function add($number1, $number2) {
+    $result: $number1 + $number2;
+    @return $result;
+}
+
+
+div {
+    margin-top: add(5, 10)px;
+    background-color: $color-div;
+}
+
+div:hover {
+    background-color: darken($color-div, 20%);
+}
